@@ -11,6 +11,16 @@ document.querySelectorAll('.hero-logo, .eyebrow, h1, .hero-sub, .hero-links, .sp
   observer.observe(el);
 });
 
+// Mobile nav toggle
+const nToggle = document.getElementById('nToggle');
+const nLinks = document.querySelector('.n-links');
+if (nToggle && nLinks) {
+  nToggle.addEventListener('click', () => nLinks.classList.toggle('open'));
+  nLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => nLinks.classList.remove('open'));
+  });
+}
+
 // Lightbox with prev/next
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightboxImg');
