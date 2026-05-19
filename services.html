@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaning Services | Pro Choice Cleaning Services | Bryan, TX</title>
+  <meta name="description" content="Residential, commercial, post-construction, floor care, janitorial supplies, and specialty cleaning in Bryan and College Station, TX. Veteran-owned, bonded, and insured.">
+  <meta name="keywords" content="cleaning services Bryan TX, residential cleaning Bryan TX, commercial cleaning College Station, post-construction cleaning Brazos Valley, floor care Bryan TX, janitorial supplies Bryan, deep cleaning Bryan TX">
+  <meta name="author" content="Pro Choice Cleaning Services">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://prochoicecleaningservices.com/services.html">
+
+  <meta property="og:title" content="Cleaning Services | Pro Choice Cleaning Services | Bryan, TX">
+  <meta property="og:description" content="Full-service cleaning company in Bryan, TX. Residential, commercial, post-construction, floor care, and more. Veteran-owned, bonded, and insured.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://prochoicecleaningservices.com/services.html">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CleaningService",
+    "name": "Pro Choice Cleaning Services",
+    "description": "Veteran-owned cleaning company serving Bryan, College Station, and the Brazos Valley. Residential, commercial, post-construction, floor care, and janitorial supplies.",
+    "url": "https://prochoicecleaningservices.com/",
+    "telephone": "+19794503860",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bryan",
+      "addressRegion": "TX",
+      "postalCode": "77802",
+      "addressCountry": "US"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Bryan" },
+      { "@type": "City", "name": "College Station" }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Cleaning Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential Cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial Cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Post-Construction Cleaning" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Floor Care" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Janitorial Supplies" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Specialty Cleaning" } }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    /* Services page inner styles */
+    .svc-page {
+      padding: 160px 60px 120px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .svc-page-head {
+      max-width: 640px;
+      margin-bottom: 100px;
+    }
+
+    .svc-page-head .eyebrow {
+      position: relative;
+      z-index: auto;
+      margin-bottom: 24px;
+    }
+
+    .svc-page-head h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      margin-bottom: 24px;
+    }
+
+    .svc-page-head p {
+      font-size: 1.05rem;
+      color: var(--muted);
+      line-height: 2;
+    }
+
+    /* Service detail blocks */
+    .svc-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+      padding: 80px 0;
+      border-top: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .svc-block:last-child {
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .svc-block.reverse {
+      direction: rtl;
+    }
+
+    .svc-block.reverse > * {
+      direction: ltr;
+    }
+
+    .svc-img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .svc-text .svc-num {
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--tan);
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .svc-text h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      font-weight: 400;
+      color: var(--charcoal);
+      margin-bottom: 20px;
+    }
+
+    .svc-text p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 2;
+      margin-bottom: 24px;
+    }
+
+    .svc-text ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .svc-text ul li {
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .svc-text ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 1px;
+      background: var(--tan);
+    }
+
+    .svc-cta-band {
+      background: var(--sand);
+      padding: 100px 60px;
+      text-align: center;
+    }
+
+    .svc-cta-band h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      color: var(--charcoal);
+      margin-bottom: 24px;
+    }
+
+    .svc-cta-band p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    .svc-cta-band .cta-links {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 900px) {
+      .svc-block {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .svc-block.reverse {
+        direction: ltr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .svc-page {
+        padding: 120px 24px 80px;
+      }
+      .svc-cta-band {
+        padding: 80px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="n-title"><a href="index.html" style="text-decoration:none;color:inherit;">Pro Choice <span>Cleaning Services</span></a></span>
+    <div class="n-links">
+      <a href="services.html" style="color:var(--tan);border-bottom:1px solid var(--tan);padding-bottom:2px;">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="careers.html">Careers</a>
+      <a href="get-started.html" style="background:#c4a97d;color:#1a1a1a;padding:8px 18px;border-radius:2px;font-weight:500;">Get Started</a>
+    </div>
+    <a href="tel:+19794503860" class="n-call"><i>(979) 450-3860</i></a>
+    <button class="n-toggle" id="nToggle"><span></span><span></span></button>
+  </nav>
+
+  <div class="svc-page">
+    <div class="svc-page-head">
+      <p class="eyebrow">Veteran-Owned &middot; Bonded &middot; Insured</p>
+      <h1><i>What we do.</i></h1>
+      <p>From routine house cleaning to post-construction makeovers, we bring military-grade discipline to every job in the Brazos Valley. No corners cut. No excuses.</p>
+    </div>
+
+    <!-- Residential -->
+    <div class="svc-block">
+      <img
+        src="https://images.pexels.com/photos/6195050/pexels-photo-6195050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Professional residential cleaning in Bryan TX"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">01 / 06</span>
+        <h2><i>Residential Cleaning</i></h2>
+        <p>Your home deserves consistent, thorough care. We handle regular maintenance cleans, seasonal deep cleans, and everything in between. You come home to a spotless space without lifting a finger.</p>
+        <ul>
+          <li>Regular scheduled cleans (weekly, bi-weekly, monthly)</li>
+          <li>Deep cleans for every room</li>
+          <li>Move-in and move-out cleans</li>
+          <li>Kitchen, bathrooms, bedrooms, and common areas</li>
+          <li>Eco-friendly product options available</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Commercial -->
+    <div class="svc-block reverse">
+      <img
+        src="https://images.pexels.com/photos/4099471/pexels-photo-4099471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Commercial office cleaning services in College Station TX"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">02 / 06</span>
+        <h2><i>Commercial Cleaning</i></h2>
+        <p>A clean workplace drives productivity and leaves the right impression on clients. We work around your hours so operations never slow down. Offices, retail, medical facilities, and industrial spaces all handled with the same attention to detail.</p>
+        <ul>
+          <li>Office and corporate spaces</li>
+          <li>Retail and storefront cleaning</li>
+          <li>Medical and clinic environments</li>
+          <li>Industrial and warehouse facilities</li>
+          <li>After-hours and weekend scheduling available</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Post-Construction -->
+    <div class="svc-block">
+      <img
+        src="https://images.pexels.com/photos/8961126/pexels-photo-8961126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Post-construction cleaning and debris removal Bryan TX"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">03 / 06</span>
+        <h2><i>Post-Construction</i></h2>
+        <p>New builds and renovations leave behind a mess that requires specialized knowledge to tackle. Drywall dust, adhesive residue, paint overspray, and construction debris all need to go before the space is ready for people. We get it move-in ready fast.</p>
+        <ul>
+          <li>New construction final clean</li>
+          <li>Renovation and remodel cleanup</li>
+          <li>Dust and debris removal from all surfaces</li>
+          <li>Window, fixture, and hardware cleaning</li>
+          <li>Rough and final clean phases available</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Floor Care -->
+    <div class="svc-block reverse">
+      <img
+        src="https://images.pexels.com/photos/6195122/pexels-photo-6195122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Professional floor stripping waxing and buffing services"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">04 / 06</span>
+        <h2><i>Floor Care</i></h2>
+        <p>Floors take a beating. We restore them. Whether it is stripping old wax from vinyl, extracting deep-set stains from carpet, or polishing hardwood back to life, our floor care service goes far beyond mopping.</p>
+        <ul>
+          <li>Strip, wax, and buff hard floors</li>
+          <li>Carpet extraction and hot-water rinse</li>
+          <li>Hardwood and laminate polishing</li>
+          <li>Tile and grout deep cleaning</li>
+          <li>Commercial-grade equipment on every job</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Janitorial Supplies -->
+    <div class="svc-block">
+      <img
+        src="https://images.pexels.com/photos/4239038/pexels-photo-4239038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Professional janitorial supplies and cleaning products"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">05 / 06</span>
+        <h2><i>Janitorial Supplies</i></h2>
+        <p>We use professional-grade products on every job because we know they work. Now those same products are available for purchase. Stock your facility with the supplies that the pros rely on, sourced through a company that actually uses them daily.</p>
+        <ul>
+          <li>Commercial-grade cleaning chemicals</li>
+          <li>Paper goods and dispensers</li>
+          <li>Trash liners and waste management supplies</li>
+          <li>Mops, buckets, and floor care equipment</li>
+          <li>Bulk ordering available for businesses</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Specialty -->
+    <div class="svc-block reverse">
+      <img
+        src="https://images.pexels.com/photos/4239131/pexels-photo-4239131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Specialty cleaning services pressure washing and windows"
+        class="svc-img"
+      >
+      <div class="svc-text">
+        <span class="svc-num">06 / 06</span>
+        <h2><i>Specialty &amp; Custom</i></h2>
+        <p>Not every cleaning need fits a standard package. If it needs to be clean, call us. Pressure washing exteriors, window cleaning, event prep and teardown, and custom one-time projects are all in our wheelhouse.</p>
+        <ul>
+          <li>Pressure washing (driveways, exteriors, patios)</li>
+          <li>Interior and exterior window cleaning</li>
+          <li>Event pre-clean and post-event cleanup</li>
+          <li>One-time and emergency cleaning calls</li>
+          <li>Custom scopes quoted on request</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA Band -->
+  <div class="svc-cta-band">
+    <h2><i>Ready to get started?</i></h2>
+    <p>We serve Bryan, College Station, and the entire Brazos Valley. Get your free quote today, no pressure.</p>
+    <div class="cta-links">
+      <a href="contact.html" class="text-link"><i>Request a free quote</i> &rarr;</a>
+      <a href="get-started.html" class="text-link"><i>Get started online</i> &rarr;</a>
+    </div>
+  </div>
+
+  <footer class="ft">
+    <span>Pro Choice Cleaning Services</span>
+    <span>&middot;</span>
+    <span>Bryan, TX</span>
+    <span>&middot;</span>
+    <span>Veteran-Owned</span>
+    <span>&middot;</span>
+    <span>&copy; 2026</span>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
+
+  <!-- Aeopic Chatbot Widget -->
+  <script src="/js/chatbot-kb.js"></script>
+  <script src="/js/chatbot.js"></script>
+</body>
+</html>
